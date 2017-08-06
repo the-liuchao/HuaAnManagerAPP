@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+    <luo.library.base.widget.OverScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10">
+
+        <LinearLayout
+            android:id="@+id/ll_personal_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHeadPhoto"
+                style="@style/personal_center_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whites">
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:text="@string/head_portrait" />
+
+                <luo.library.base.widget.CircleImageView
+                    android:id="@+id/iv_headPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/icon_default_avatar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/personal_center_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_1">
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="张三" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qrLayout"
+                style="@style/personal_center_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_1">
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:text="二维码" />
+
+                <ImageView
+                    android:id="@+id/iv_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_erweima" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/personal_center_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:text="所属机构" />
+
+                <TextView
+                    android:id="@+id/tv_organization"
+                    style="@style/personal_center_text"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="福田营业厅" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_modify_landline"
+                style="@style/option_item_ll"
+                android:layout_marginTop="@dimen/size_10">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_zuoji" />
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:text="座机" />
+
+                <TextView
+                    android:id="@+id/tv_landline"
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0775-7169794" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_youjiantou" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_modify_cornet"
+                style="@style/option_item_ll"
+                android:layout_marginTop="@dimen/size_1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_duanhao" />
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:text="短号" />
+
+                <TextView
+                    android:id="@+id/tv_cornet"
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:text="123456"
+                    android:textColor="@color/main_text_color" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_youjiantou" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_bindPhone"
+                style="@style/option_item_ll"
+                android:layout_marginTop="@dimen/size_1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_shoujihaoma" />
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/tv_mobilePhone"
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:text="未设置"
+                    android:textColor="#6A6B7F" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_youjiantou" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_email"
+                style="@style/option_item_ll"
+                android:layout_marginTop="@dimen/size_1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/icon_youxiang" />
+
+                <TextView
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/my_email" />
+
+                <TextView
+                    android:id="@+id/tv_my_email"
+                    style="@style/personal_center_text"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:text="未设置"
+                    android:textColor="#6A6B7F" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_login_out"
+                style="@style/NormalButton_Red"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/font_34"
+                android:layout_marginTop="@dimen/font_34"
+                android:text="@string/login_out" />
+
+        </LinearLayout>
+
+
+    </luo.library.base.widget.OverScrollView>
+
+
+</LinearLayout>

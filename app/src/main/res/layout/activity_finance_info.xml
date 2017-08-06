@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+    <View style="@style/horizontal_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/consumption_apply_thrid_step" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="贷款用途"
+                        android:textColor="#32323A" />
+
+                    <com.sinosafe.xb.manager.widget.edit.ClearEditText
+                        android:id="@+id/et_loanUse"
+                        android:layout_width="0dp"
+                        android:layout_height="43dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_loan_edittext"
+                        android:hint="请输入贷款用途"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/size_10"
+                        android:paddingRight="@dimen/size_10"
+                        android:textSize="@dimen/font_14" />
+                </LinearLayout>
+
+                <!--机动车start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="车产状况"
+                        android:textColor="#32323A" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_noCar"
+                            style="@style/LoanRadioButton"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:text="无车" />
+
+                        <RadioButton
+                            android:id="@+id/rb_hasCar"
+                            style="@style/LoanRadioButton"
+                            android:layout_marginRight="@dimen/size_20"
+                            android:checked="true"
+                            android:text="有车" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/automobileCertificateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:text="机动车登录证书"
+                        android:textColor="#32323A" />
+
+                    <ImageView
+                        android:id="@+id/iv_automobileCertificate"
+                        android:layout_width="240dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_jidongche" />
+
+                </LinearLayout>
+                <!-- 机动车end-->
+
+                <!--房产start-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="房产状况"
+                        android:textColor="#32323A" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_marital_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_noHouse"
+                            style="@style/LoanRadioButton"
+                            android:layout_marginLeft="@dimen/size_20"
+                            android:text="无房" />
+
+                        <RadioButton
+                            android:id="@+id/rb_hasHouse"
+                            style="@style/LoanRadioButton"
+                            android:layout_marginRight="@dimen/size_20"
+                            android:checked="true"
+                            android:text="有房" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/housePropertyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:text="房产所有权证"
+                        android:textColor="#32323A" />
+
+                    <ImageView
+                        android:id="@+id/iv_houseProperty"
+                        android:layout_width="240dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_fangchan" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/NormalButton"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_marginTop="@dimen/size_30"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

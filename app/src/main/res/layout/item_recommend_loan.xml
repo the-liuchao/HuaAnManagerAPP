@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/laycolor"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_loan_icon"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_5"
+            android:src="@mipmap/icon_gongjijin" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_loan_icon"
+            android:text="公积金贷款"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#282932"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_title"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tag_1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_loan_tag_0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/size_2"
+                android:text="无抵押"
+                android:textColor="@color/loan_tag_color_0"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_tag_2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/size_5"
+                android:background="@drawable/shape_loan_tag_1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/size_2"
+                android:text="免担保"
+                android:textColor="@color/loan_tag_color_1"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_tag_3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/size_5"
+                android:background="@drawable/shape_loan_tag_2"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/size_2"
+                android:text="无抵押"
+                android:textColor="@color/loan_tag_color_2"
+                android:textSize="@dimen/font_12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_maximum_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lines="1"
+                    android:textStyle="bold"
+                    android:text="30.00"
+                    android:textColor="@color/product_quota"
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="万"
+                    android:textColor="@color/product_quota"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/product_quota"
+                android:gravity="center"
+                android:textColor="@color/product_quota_title"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_interest_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textStyle="bold"
+                    android:text="0.00"
+                    android:textColor="@color/product_other"
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/tv_unit_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="%"
+                    android:textColor="@color/product_other"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/product_interest_rate"
+                android:textColor="@color/product_quota_title"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-5"
+                    android:textStyle="bold"
+                    android:textColor="@color/product_other"
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:id="@+id/tv_unit_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="日"
+                    android:textColor="@color/product_other"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/product_speed"
+                android:textColor="@color/product_quota_title"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/main_bg"/>
+
+</LinearLayout>

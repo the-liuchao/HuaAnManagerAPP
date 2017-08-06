@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="@string/power_of_attorney"
+        android:textColor="#222222"
+        android:textSize="@dimen/font_18"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:background="#F7F7FF"
+        android:padding="@dimen/size_10"
+        android:textColor="#4C4C55"
+        android:visibility="gone" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+   <!-- <WebView
+        android:id="@+id/wv_content"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:scrollbars="none"
+        android:background="#f6f7ff"
+        android:textColor="#4C4C55" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_signature"
+            android:textColor="#222222"
+            android:textSize="@dimen/font_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="@dimen/size_10"
+                android:gravity="center|left"
+                android:text="@string/customer_signature_prompt"
+                android:textColor="#ABADBA" />
+
+            <ImageView
+                android:id="@+id/iv_signature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_color" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_lightgray_conner8"
+            android:orientation="vertical"
+            android:paddingLeft="12dp">
+
+            <com.sinosafe.xb.manager.widget.edit.ClearEditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/enter_verification_code"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <com.sinosafe.xb.manager.widget.VerificationCodeButton
+            android:id="@+id/btn_get_code"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/selector_verification_code_btn2"
+            android:text="@string/get_verification_code"
+            android:textColor="@drawable/selector_verification_code_text"
+            android:textSize="@dimen/font_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_disagree"
+            style="@style/NormalButton_White"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_weight="1"
+            android:text="@string/disagree" />
+
+        <Button
+            android:id="@+id/btn_agree"
+            style="@style/NormalButton_Red"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_weight="1"
+            android:text="@string/agree" />
+
+    </LinearLayout>
+
+</LinearLayout>

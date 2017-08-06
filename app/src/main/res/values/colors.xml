@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7380F3</color>
+    <color name="colorPrimaryDark">#7380F3</color>
+    <color name="colorAccent">#7380F3</color>
+
+    <!-- RecycleView foot颜色 -->
+    <color name="color_ff">#F0F0F0</color>
+    <color name="color_00">#8A000000</color>
+    <!-- RecycleView item点击颜色 -->
+    <color name="item_bg">#cfd8dc</color>
+    <!-- RecycleView item分隔线颜色 -->
+    <!--<color name="item_divide_bg">#E1E5E6</color>-->
+    <color name="item_divide_bg">#d7dadb</color>
+    <color name="horizontal_line_color">#d7dadb</color>
+
+
+    <color name="blue">#499BF7</color>
+    <color name="whites">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#E9E9E9</color>
+    <color name="yellow">#FF6300</color>
+    <color name="orange">#FF8D01</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="green">#24C865</color>
+    <color name="line_color">#cccccc</color>
+    <color name="status_bar_bg">#7380F3</color>
+
+    <color name="color_loan_amount">#EE594B</color>
+    <color name="color_total_interest_rate">#FFCE57</color>
+    <color name="color_monthly">#2ECF7D</color>
+
+    <!--普通按钮-->
+    <color name="common_button_normal">#747ff3</color>
+    <color name="common_button_press">#5b65d3</color>
+    <color name="common_button_enabled">#CBCCCC</color>
+
+    <color name="verification_code_normal">#FF5242</color>
+    <color name="verification_code">#F46353</color>
+
+    <!--loan tag color-->
+    <color name="loan_tag_color_0">#4cd6cb</color>
+    <color name="loan_tag_color_1">#11a7cc</color>
+    <color name="loan_tag_color_2">#ff5243</color>
+    <color name="loan_tag_color_3">#ffa71c</color>
+    <color name="loan_tag_color_4">#36d295</color>
+
+    <!--product-->
+    <color name="product">#D8DCF9</color>
+    <color name="product_quota">#ff4e40</color>
+    <color name="product_other">#676979</color>
+    <color name="product_quota_title">#6b6f7d</color>
+
+    <color name="option_item_text">#282932</color>
+</resources>

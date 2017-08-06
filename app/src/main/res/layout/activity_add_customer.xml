@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingTop="25dp"
+        android:paddingBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_headPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_user_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_headPhoto"
+            android:text="添加照片"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#545564" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="姓名"
+            android:textColor="#545564" />
+
+        <com.sinosafe.xb.manager.widget.edit.ClearEditText
+            android:id="@+id/et_customerName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1"
+            android:textSize="14dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#545564"
+            android:gravity="right|center"
+            android:hint="请输入姓名"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="电话号码"
+            android:textColor="#545564" />
+
+        <com.sinosafe.xb.manager.widget.edit.ClearEditText
+            android:id="@+id/et_customerPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1"
+            android:textSize="14dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#545564"
+            android:gravity="right|center"
+            android:hint="请输入电话号码"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_add"
+        style="@style/NormalButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_56"
+        android:textSize="14dp"
+        android:text="确认添加" />
+
+</LinearLayout>

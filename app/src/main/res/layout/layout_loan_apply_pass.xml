@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_apply_pass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10"
+        android:background="@mipmap/loan_apply_pass_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:text="@string/apply_loan_reply_result"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <luo.library.base.widget.MoneyView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:yuan_size="30sp"
+                app:prefix_size="24sp"
+                app:cent_size="24sp"
+                app:money_text="0.00"
+                app:grouping="true"
+                app:prefix_text="¥"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/apply_loan_amount"
+                android:textColor="#696976" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_10"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingStart="@dimen/size_10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_loan_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5"
+                    android:layout_marginStart="@dimen/size_5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="12个月"
+                    android:textColor="@color/option_item_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2"
+                    android:text="@string/apply_loan_deadline"
+                    android:textColor="#696976"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pass_repayment_methods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="等额本息"
+                    android:textColor="@color/option_item_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2"
+                    android:text="@string/apply_repayment_methods"
+                    android:textColor="#696976"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_premium_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5"
+                    android:layout_marginStart="@dimen/size_5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0.15%"
+                    android:textColor="@color/option_item_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2"
+                    android:text="@string/apply_premium_rate"
+                    android:textColor="#696976"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_lending_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_5"
+                    android:layout_marginStart="@dimen/size_5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0.23%"
+                    android:textColor="@color/option_item_text"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2"
+                    android:text="@string/apply_lending_rate"
+                    android:textColor="#696976"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_details"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:textColor="@color/option_item_text" />
+
+</LinearLayout>

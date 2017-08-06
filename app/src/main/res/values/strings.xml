@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">华安信保</string>
+
+    <!--RecycleView footer-->
+    <string name="list_footer_loading">正在加载中…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已经到底了</string>
+
+    <!--贷款-->
+    <!--公积金贷款-->
+    <string name="small_amount_loan_intro">无抵押 免担保 放款快</string>
+    <string name="maximum_limit">最高额度</string>
+    <string name="minimum_daily_rate">最低日费率 : </string>
+    <string name="amount">金额</string>
+    <string name="term">期限</string>
+    <string name="loan_amount">贷款额</string>
+    <string name="total_interest_rate">总利率</string>
+    <string name="monthly">月供</string>
+    <string name="month_payment">每月等额还款</string>
+    <string name="calculation_result">计算结果仅为试算，实际费率结果以最终审核结果为准！</string>
+    <string name="apply_conditions">申请条件</string>
+    <string name="apply_process">申请流程</string>
+    <string name="product_intro">产品介绍</string>
+    <string name="common_problem">常见问题</string>
+    <string name="apply_immediately">立即申请</string>
+    <string name="title_provident_fund_loan">公积金贷款</string>
+
+    <!--消费贷-->
+    <string name="provident_fund_loan_intro">无抵押 免担保 高金额</string>
+    <string name="choose_loan_amount">请选择你需要的贷款金额</string>
+    <string name="choose_stages_number">请选择分期数</string>
+    <string name="choose_description">请出所有符合你的描述</string>
+    <string name="recommend_loan">以下为推荐贷款</string>
+
+    <!--消费贷申请-->
+    <string name="card_holder_prompt">请绑定持卡人本人的银行卡</string>
+    <string name="card_holder">持卡人</string>
+    <string name="enter_card_holder">输入持卡人姓名</string>
+    <string name="card_number">卡号</string>
+    <string name="enter_card_number">输入银行卡号码</string>
+    <string name="enter_card_phone_number">输入银行卡预留手机号码</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="enter_verification_code">输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="signature_prompt">请先进行电子签署</string>
+
+    <!--个人中心-->
+    <string name="user_hint_login">点击头像登录</string>
+    <string name="head_portrait">头像</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="id_number">身份证号码</string>
+    <string name="my_address">我的地址</string>
+    <string name="bind_wechat">绑定微信</string>
+    <string name="my_email">我的邮箱</string>
+    <string name="gesture_password">手势密码</string>
+    <string name="update_password">修改密码</string>
+    <string name="update_email_hint">请输入常用邮箱</string>
+    <string name="update_email_prompt">请输入正确的邮箱</string>
+    <string name="current_login_password">当前密码</string>
+    <string name="enter_login_password">输入登录密码</string>
+    <string name="enter_new_password">输入含字母和数字大于8位数的密码</string>
+    <string name="enter_new_phone">输入新的手机号码</string>
+
+
+    <!--信息填写-->
+    <string name="basic_info">基本信息</string>
+    <string name="emergency_contact">紧急联系人</string>
+    <string name="recommended_person">推荐人</string>
+    <string name="education_level">教育程度</string>
+    <string name="please_choose_education">请选择学历</string>
+    <string name="please_choose_marriage">请选择婚姻状况</string>
+    <string name="marital_status">婚姻状况</string>
+    <string name="unmarried">未婚</string>
+    <string name="married">已婚</string>
+    <string name="car_status">车产状况</string>
+    <string name="no_car">无车</string>
+    <string name="have_car">有车</string>
+    <string name="house_status">房产状况</string>
+    <string name="no_house">无房</string>
+    <string name="have_house">有房</string>
+    <string name="residential_address">居住地址</string>
+    <string name="please_choose_residential_address">请选择居住地址</string>
+    <string name="street">街道</string>
+    <string name="detail_address_hint">街道/小区/门牌号等具体地址信息</string>
+    <string name="please_enter_residential_address">请输入详细地址</string>
+    <string name="add_contact">点击添加联系人</string>
+    <string name="contact_name">联系人名称</string>
+    <string name="sure_delete_contact">确定要删除此联系人吗？</string>
+    <string name="emergency_contact_prompt">请正确填写联系人中文姓名,合法的手机号码！</string>
+    <string name="enter_job_number">输入工号（选填）</string>
+
+    <!--项目-->
+    <string name="product_quota">最高额度</string>
+    <string name="product_interest_rate">最低日利率</string>
+    <string name="product_speed">放款速度</string>
+
+    <string name="authorization_fail">您当前授权信息失效或未曾授权，请授权！</string>
+    <string name="authorization_fail_prompt">我们注重信息保护，不对外提供，仅采集与你信用相关的信息，公积金和社保反映用户履约能力的重要信息，有助于华安保险为你更客观的评估。</string>
+
+
+    <string name="details">详情</string>
+    <string name="apply_details">申请详情</string>
+    <string name="approval_progress">审批进度</string>
+    <string name="apply_loan_state">贷款状态：</string>
+    <string name="apply_loan_notpass">很抱歉，由于以下原因导致您的贷款审核未能通过！</string>
+    <string name="apply_loan_reply_result">批复结果</string>
+    <string name="apply_loan_amount">贷款金额</string>
+    <string name="apply_loan_deadline">贷款期限</string>
+    <string name="apply_repayment_methods">还款方式</string>
+    <string name="apply_premium_rate">保险费率</string>
+    <string name="apply_lending_rate">贷款利率</string>
+
+
+</resources>

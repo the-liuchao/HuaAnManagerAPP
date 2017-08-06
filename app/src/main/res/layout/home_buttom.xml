@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 待办事项 -->
+
+    <RelativeLayout
+        android:id="@+id/daibanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@mipmap/icon_daiban_shixiang"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="待办事项"
+            android:textStyle="bold"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="6dp"
+            android:visibility="invisible"
+            android:drawableRight="@mipmap/icon_youjiantou"
+            android:gravity="center|left"
+            android:text="查看全部"
+            android:textColor="@color/light_gray_color"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/buchongLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_buchongzilioa"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="补充资料"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvBuChongNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:background="@drawable/shape_red_oval"
+            android:textColor="@color/whites"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/mianqianLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_mianqian"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="面签"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvMianQianNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:background="@drawable/shape_red_oval"
+            android:textColor="@color/whites"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/jiaofeiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_jiaofei"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="缴费"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvJiaofeiNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:background="@drawable/shape_red_oval"
+            android:textColor="@color/whites"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/daihouLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_daihouguanli"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="贷后管理"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvDaiHouNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:background="@drawable/shape_red_oval"
+            android:textColor="@color/whites"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/notSignedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_daihouguanli"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="在线签投保单"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvNotSignedNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:background="@drawable/shape_red_oval"
+            android:textColor="@color/whites"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:money="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/daiShouLiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/laycolor"
+        android:paddingLeft="12dp"
+        android:paddingRight="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@mipmap/icon_dangriqingkuang"
+            android:drawablePadding="6dp"
+            android:gravity="center|left"
+            android:text="当日情况"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E7E9F9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cunFangNum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#282932"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/icon_fangkuanbishu"
+                    android:drawablePadding="4dp"
+                    android:text="放款笔数"
+                    android:textColor="#737584"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <luo.library.base.widget.MoneyView
+                        android:id="@+id/tvFangKuanMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        money:cent_size="16dp"
+                        money:grouping="true"
+                        money:money_color="#282932"
+                        money:money_text="0.00"
+                        money:point_padding_left="3dp"
+                        money:point_padding_right="3dp"
+                        money:prefix_color="#282932"
+                        money:prefix_size="12dp"
+                        money:prefix_text=""
+                        money:yuan_size="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万"
+                        android:textColor="#282932"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/icon_fangkuanjine"
+                    android:drawablePadding="4dp"
+                    android:text="贷款金额"
+                    android:textColor="#737584"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <luo.library.base.widget.MoneyView
+                        android:id="@+id/tvBaoFeiMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        money:cent_size="16dp"
+                        money:grouping="true"
+                        money:money_color="#282932"
+                        money:money_text="0.00"
+                        money:point_padding_left="3dp"
+                        money:point_padding_right="3dp"
+                        money:prefix_color="#282932"
+                        money:prefix_size="12dp"
+                        money:prefix_text=""
+                        money:yuan_size="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万"
+                        android:textColor="#282932"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@mipmap/icon_baofeishouru"
+                        android:drawablePadding="4dp"
+                        android:text="保费收入"
+                        android:textColor="#737584"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

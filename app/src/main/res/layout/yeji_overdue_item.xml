@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_white_conner8"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:layout_marginBottom="6dp"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_avatar" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="张德四"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ivImage"
+            android:textColor="#282932"
+            android:textSize="15dp" />
+
+        /<TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivImage"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="13246624513"
+            android:textColor="#818394"
+            android:drawableLeft="@mipmap/icon_dianhua"
+            android:drawablePadding="6dp"
+            android:textSize="13dp" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#E7E9F9"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_chanpin"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="逾期天数"
+            android:textColor="#818394"
+            android:textSize="13dp" />
+
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:gravity="center"
+            android:text="4天"
+            android:textColor="#282932"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/icon_jine"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="申请金额"
+            android:textColor="#818394"
+            android:textSize="13dp" />
+
+
+        <luo.library.base.widget.MoneyView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv2"
+            app:grouping="true"
+            app:money_text="2000.00"
+            app:prefix_text="¥" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_gray_oval"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_blue_oval"
+            android:gravity="center"
+            android:text="查看还款记录"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

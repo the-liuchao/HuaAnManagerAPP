@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+    <View style="@style/horizontal_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/spouseIdCardLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="配偶身份证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/tvIDCard"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/workCardLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="工牌"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvWorkCard"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/vehicleLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="机动车登记证书"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvVehicle"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/housePropertyLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="房产所有权证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvHouseProperty"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/imageDataLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="上传影像资料&amp;征信授权书"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvImageData"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_marginTop="@dimen/size_40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    style="@style/NormalButton_White"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:text="保存"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:textColor="@color/main_text_color" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/NormalButton"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:textSize="16dp"
+                    android:text="提交" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

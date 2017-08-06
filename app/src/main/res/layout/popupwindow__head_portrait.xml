@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_head_popupwindows_ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/laycolor"
+                android:text="@string/take_photo"
+                android:textColor="@color/main_text_color" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_photo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/laycolor"
+                android:text="@string/select_from_album"
+                android:textColor="@color/main_text_color" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/laycolor"
+            android:text="@string/cancel"
+            android:textColor="@color/main_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

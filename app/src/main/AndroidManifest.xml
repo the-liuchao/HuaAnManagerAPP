@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinosafe.xb.manager">
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+
+    <!-- 极光推送  已精减部分存在的权限-->
+    <!-- Required -->
+    <permission
+        android:name="com.sinosafe.xb.manager.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.sinosafe.xb.manager.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Optional for location -->
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 极光end-->
+
+    <!--读取联系人权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 闪光灯权限，比如二维码扫描需打开闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    //允许程序改变网络连接状态
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    //允许程序改变Wi-Fi连接状态
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    //允许程序访问有关的网络信息
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //允许程序访问Wi-Fi网络状态信息
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!--==================高德地图请求权限=======================-->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于提高GPS定位速度-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!--===================高德地图请求权限完===========================-->
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+
+    <application
+        android:name=".APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name="luo.library.base.utils.UpdateService"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.dbjtech.myservice" />
+            </intent-filter>
+        </service>
+        <!--高德地图-->
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="333acdd0140965a399e53f3615f91746" />
+
+        <!-- 友盟统计-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="593dfa06c62dca4c8b00234a"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <!-- tencent QQ start -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106234724" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- tencent QQ end -->
+
+        <!-- 微信分享 callback -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.sinosafe.xb.manager.SplashADActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".module.home.gonggao.GongGaoActivity"
+            android:label="公告列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.home.gonggao.GonggaoDetailActivity"
+            android:label="公告详情"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.home.xiaofeidai.XiaoFeiDaiActivity"
+            android:label="消费贷/微贷"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.xiaofeidai.XiaoFeiDaiApplyActivity"
+            android:label="消费贷申请"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.home.xiaofeidai.ConsumptionLoanActivity"
+            android:label="消费贷列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.home.xiaofeidai.LoanProblemActivity"
+            android:label="消费贷列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 第三方认证 -->
+        <!-- 身份证识别 -->
+        <activity
+            android:name="com.megvii.idcardlib.IDCardScanActivity"
+            android:label="身份证识别"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <!-- 人脸识别 -->
+        <activity
+            android:name="com.megvii.livenesslib.LivenessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name=".ui.activity.user.account.FaceResultActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        -->
+        <!-- 银行卡识别 -->
+        <activity
+            android:name="com.megvii.demo.BankCardScanActivity"
+            android:label="银行卡识别"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.megvii.demo.ResultActivity"
+            android:label="银行卡识别结果"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.shouliyewu.CustomerDetailActivity"
+            android:label="客户详情"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.shouliyewu.DaiShouLiYewuActivity"
+            android:label="待受理业务"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.mianqian.MianQianListActivity"
+            android:label="面签列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.mianqian.MianQianDetailActivity"
+            android:label="办理面签"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".module.home.mianqian.BanLiMianQianActivity" />
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:label="图片预览删除"
+            android:launchMode="singleTop"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+
+        <activity
+            android:name=".module.imagePreview.MyImagePreviewDelActivity"
+            android:label="复写的图片预览删除"
+            android:launchMode="singleTop"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+
+        <activity
+            android:name=".module.home.supplyInfo.SupplyInfoListActivity"
+            android:label="补充资料列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.yewu.xiaofeidai.ConsumeDetailActivity"
+            android:label="消费贷详情、进度"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".module.yewu.weidai.MicroCreditDetailActivity"
+            android:label="微贷详情、进度"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.yeji.YeJiSortActivity"
+            android:label="业绩排行榜"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.yeji.YeJiBrokenLineChartActivity"
+            android:label="业绩趋势图"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.mine.MeCenterActivity"
+            android:label="个人中心"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.mine.BindPhoneActivity"
+            android:label="绑定手机号码"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.mine.MyCustomerActivity"
+            android:label="我的客户"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.mine.AddCustomerActivity"
+            android:label="新建客户"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.mine.CreateGestureActivity"
+            android:label="手势密码"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.mine.GestureLoginActivity"
+            android:label="手势密码登录"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.mine.GestureUpdateActivity"
+            android:label="手势密码修改"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.home.xiaofeidai.ElectronicSignatureActivity"
+            android:label="电子签名"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".module.home.xiaofeidai.supplementInfo.PersonInfoActivity"
+            android:label="申请消费贷--个人信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.xiaofeidai.supplementInfo.CareerInfoActivity"
+            android:label="申请消费贷--职业信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+
+        <activity
+            android:name=".module.home.xiaofeidai.supplementInfo.FinanceInfoActivity"
+            android:label="申请消费贷--财务信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.xiaofeidai.supplementInfo.EmergencyContactActivity"
+            android:label="申请消费贷--紧急联系人"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.xiaofeidai.supplementInfo.LoadApplyResultActivity"
+            android:label="申请消费贷--申请结果"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.weidai.FamilyInfoActivity"
+            android:label="微贷申请--家庭信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.weidai.BusinessinfoActivity"
+            android:label="微贷申请--生意信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+
+        <activity
+            android:name=".module.home.weidai.DataListActivity"
+            android:label="微贷申请--生意信息"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".module.home.weidai.ImageSelectActivity"
+            android:label="微贷申请--选择图片"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.supplyInfo.ImageSelectActivity2"
+            android:label="补充资料/贷后凭证等等--选择图片"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".module.home.message.MessageListActivity"
+            android:label="消息列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.PayListActivity"
+            android:label="缴费列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.loanmanager.LoanManagerActivity"
+            android:label="贷后管理列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.BaseWebViewActivity"
+            android:label="缴费支付列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".module.home.supplyInfo.xiaofeidai.ApplyXiaoDataActivity"
+            android:label="消费贷补充资料"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.supplyInfo.weidai.ApplyWeiDataActivity"
+            android:label="微贷补充资料"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.xiaofeidai.authorization.AuthorizationActivity"
+            android:label="授权"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.xiaofeidai.authorization.AuthorizationWebView"
+            android:label="授权"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.home.loanmanager.PaymentHistoryActivity"
+            android:label="还款计划、明细"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".module.yeji.OverdueActivity"
+            android:label="逾期金额、笔数"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".module.home.NotSignedListActivity"
+            android:label="不需要面签列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".module.PDFViewActivity"
+            android:label="查看PDF文档"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="luo.library.base.widget.WebViewActivity"
+            android:label="查看html文档"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+
+
+        <!-- 极光推送开始-->
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.sinosafe.xb.manager" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.sinosafe.xb.manager" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.sinosafe.xb.manager" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.sinosafe.xb.manager.module.service.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.sinosafe.xb.manager" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c322f59f3818b1a73f5c65f3" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+    </application>
+
+</manifest>

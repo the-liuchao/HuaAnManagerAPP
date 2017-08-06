@@ -1,0 +1,1 @@
+include ':app', ':library', ':idcard_library', ':bankcard_library', ':liveness_library', ':lockpattern', ':libjpeg',':android-pdf-viewer'

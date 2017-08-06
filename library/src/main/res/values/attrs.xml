@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <!-- 加载dialog提示窗属性-->
+    <declare-styleable name="SVCircleProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <!--金额 样式  元大 角分小 $25.33-->
+    <declare-styleable name="MoneyView">
+        <!--金额-->
+        <attr name="money_text" format="string"/>
+        <!--金额颜色-->
+        <attr name="money_color" format="color"/>
+        <!--元大小-->
+        <attr name="yuan_size" format="dimension"/>
+        <!--分大小-->
+        <attr name="cent_size" format="dimension"/>
+        <!--前缀文本-->
+        <attr name="prefix_text" format="string"/>
+        <!--前缀大小-->
+        <attr name="prefix_size" format="dimension"/>
+        <!--前缀颜色-->
+        <attr name="prefix_color" format="color"/>
+        <!--前缀右边距-->
+        <attr name="prefix_padding" format="dimension"/>
+        <!--小数点左边距-->
+        <attr name="point_padding_left" format="dimension"/>
+        <!--小数点右边距-->
+        <attr name="point_padding_right" format="dimension"/>
+        <!--是否使用千分符-->
+        <attr name="grouping" format="boolean"/>
+    </declare-styleable>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+</resources>

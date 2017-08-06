@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/size_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_loan_common_problem_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_problem_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_10"
+                android:background="@drawable/shape_loan_common_problem"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_problem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核需要多久？"
+                android:textColor="#32323A" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/tv_problem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="答：3-7个工作日或已经发到空间发的交付科技的开发接口发动机番窠倒臼发快递荆防颗粒"
+            android:textColor="#32323A" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

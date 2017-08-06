@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主页主题颜色-->
+    <color name="main_title_color">#7380F3</color>
+
+    <!-- 其他主题颜色-->
+    <color name="other_title_color">#ffffff</color>
+
+    <!-- 主要字体颜色-->
+    <color name="main_text_color">#282932</color>
+
+    <!-- 浅字体颜色-->
+    <color name="light_text_color">#737584</color>
+
+    <!-- 浅字体颜色-->
+    <color name="light_gray_color">#8c8d9b</color>
+    <color name="main_bg">#E7E9F9</color>
+
+    <!-- 标题栏是白色时的  状态栏颜色-->
+    <color name="statusBar">#DCD9CF</color>
+    <color name="color_494953">#494953</color>
+
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_svprogressdefaultview">@android:color/white</color>
+    <!--标题颜色-->
+    <color name="textColor_svprogresshuddefault_msg">#000000</color>
+    <color name="roundColor_svprogresshuddefault">#e5e5e5</color>
+    <color name="roundProgressColor_svprogresshuddefault">@android:color/black</color>
+
+    <!--普通按钮-->
+    <color name="common_button_normal">#747ff3</color>
+    <color name="common_button_press">#5b65d3</color>
+    <color name="common_button_enabled">#CBCCCC</color>
+
+    <!--白色普通按钮-->
+    <color name="common_white_button_normal">#BABBC6</color>
+    <color name="common_white_button_press">#D2D4E3</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--分割线-->
+    <color name="divider_color">#D2D4E3</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+
+</resources>

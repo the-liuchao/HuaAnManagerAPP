@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+    <View style="@style/horizontal_line" />
+
+    <luo.library.base.widget.OverScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="撒爱上了肯德基个"
+                    android:textColor="@color/main_text_color"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:drawableLeft="@mipmap/icon_shijian"
+                    android:drawablePadding="4dp"
+                    android:text="2017-07-27 12:20:00"
+                    android:textColor="@color/light_gray_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:padding="12dp"
+                android:textColor="@color/main_text_color"
+                android:lineSpacingExtra="3dp"
+                android:text="\t\t网络断了，，网络断了，。，网络断了，。。" />
+        </LinearLayout>
+    </luo.library.base.widget.OverScrollView>
+
+</LinearLayout>

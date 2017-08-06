@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_error_layout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_empty_layout"
+        tools:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="26dip"
+        android:visibility="gone"
+        android:layout_height="26dip" />
+
+    <TextView
+        android:id="@+id/tv_error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/error_view_loading"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btn_reload"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:textSize="@dimen/font_12"
+        android:textColor="@color/common_button_normal"
+        android:background="@drawable/selector_reload_button"
+        android:visibility="gone"
+        android:text="重新加载"/>
+
+</LinearLayout>

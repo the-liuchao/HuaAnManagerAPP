@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+    <View style="@style/horizontal_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/idCardLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="借款人身份证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/tvIDCard"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/marriageCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="婚姻证明文件"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvMarriage"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/familyRegisterLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="借款人户口本"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvFamilyRegister"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/residenceCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_residence"
+                    android:text="居住证明"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/tv_residence"
+                    android:text="(借款人房产证/购房合同/租房合同)"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvResidenceCertificate"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/vehicleCertificationLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="车辆证明"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvVehicleCertification"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/managerPlaceContractLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="经营场所租赁合同/产权证明/转让合同"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvManagerPlaceContract"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/customerContractLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="客户经营台账、单据、合同等"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvCustomerContract"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/managerPlaceBillLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="经营场所水电费单等固定支出单据"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvManagerPlaceBill"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/responsibilityGuaranteeLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="连带责任担保书"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvResponsibilityGuarantee"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/GuaranteeIDCardNumLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="担保人身份证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvGuaranteeIDCardNum"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/GuaranteeWorkCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="担保人工作证明/营业执照"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvGuaranteeWorkCertificate"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/pledgeDataLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv3"
+                    android:text="抵质押资料"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv3"
+                    android:text="(评估报告、他项权证复印件、抵质押合同等)"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPledgeData"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/otherAssetCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="其他资产证明"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvOtherAssetCertificate"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/signCreditLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="签署征信授权书照片"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvSignCredit"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/fieldInvestigationLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="现场调查照片"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvFieldInvestigation"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/guaranteePhotoLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="担保人照片"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvGuaranteePhoto"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/signPhotoLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_signPhoto"
+                    android:text="签约照片"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/tv_signPhoto"
+                    android:text="签署投保单、贷款权益转让书通知确认函等"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tvSignPhoto"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/personalCreditLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_personalCredit"
+                    android:text="个人征信授权书"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_personalCredit"
+                    android:text="借款人/担保人/其他相关"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPersonalCredit"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/businessRelatedLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_businessRelated"
+                    android:text="经营相关近一年银行流水"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_businessRelated"
+                    android:text="影像系统上传近半年流水"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tvBusinessRelated"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/guarantorOfBankLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="担保人近半年银行流水"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvGuarantorOfBank"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/businessLicenseLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_businessLicense"
+                    android:text="营业执照"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_businessLicense"
+                    android:text="(正副本)"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvBusinessLicense"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/taxRegistrationCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_taxRegistration"
+                    android:text="税务登记证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_taxRegistration"
+                    android:text="(正副)三证合一的商户可不提供"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTaxRegistrationCertificate"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/organizationCodeCertificateLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="组织机构代码证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvOrganizationCodeCertificate"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <RelativeLayout
+                android:id="@+id/specialIndustryLicenseLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="特殊行业许可证"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvSpecialIndustryLicense"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/articlesOfAssociationLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_articlesOfAssociation"
+                    android:text="公司章程"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_articlesOfAssociation"
+                    android:text="(法人提供)"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvArticlesOfAssociation"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/capitalVerificationReportLayout"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:background="@drawable/laycolor"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_capitalVerification"
+                    android:text="验资报告/询证函"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#545564"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_below="@+id/tv_capitalVerification"
+                    android:text="(法人提供)"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvCapitalVerificationReport"
+                    android:text="点击添加"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#b5b7c4"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_youjiantou"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <View style="@style/horizontal_line"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_40"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    style="@style/NormalButton_White"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:text="保存"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:textColor="@color/main_text_color" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/NormalButton"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:text="提交" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

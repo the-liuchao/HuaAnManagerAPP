@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingTop="6dp">
+
+    <RadioButton
+        android:id="@+id/homeRadio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/radiobutton_selector1"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="@drawable/rbtn_text_color"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/yeWuRadio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/radiobutton_selector2"
+        android:gravity="center"
+        android:text="业务"
+        android:textColor="@drawable/rbtn_text_color"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/yeJiRadio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/radiobutton_selector3"
+        android:gravity="center"
+        android:text="业绩"
+        android:textColor="@drawable/rbtn_text_color"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/meRadio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/radiobutton_selector4"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@drawable/rbtn_text_color"
+        android:textSize="13sp" />
+</RadioGroup>

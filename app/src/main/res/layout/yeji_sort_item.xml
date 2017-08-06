@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/laycolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSort"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:text="12"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_other_sort"
+            />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/tvSort"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_default_avatar" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="张德四"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivImage"
+            android:textColor="#545564"
+            android:textSize="14dp" />
+
+
+        <luo.library.base.widget.MoneyView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:money_text="2000.00"
+            app:grouping="true"
+            android:visibility="gone"
+            app:prefix_text="¥"
+            app:money_color="@color/red"
+            app:prefix_color="@color/red"
+            app:prefix_size="13dp"
+            app:cent_size="13dp"
+            app:yuan_size="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvBiShu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|right"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tvName"
+            android:text="张德四"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E7E9F9"
+        />
+    <View
+        android:id="@+id/thickLine"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        android:background="@color/main_bg"
+        />
+</LinearLayout>

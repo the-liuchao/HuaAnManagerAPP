@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="confirm">确认</string>
+    <string name="prompt">提示</string>
+    <string name="submit">提交</string>
+    <string name="login_out">退出登录</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="select_from_album">从相册中选择</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="next">下一步</string>
+    <string name="or">或</string>
+
+
+    <string name="power_of_attorney">个人征信业务授权书</string>
+    <string name="customer_signature">客户签名：</string>
+    <string name="customer_signature_prompt">点击此处进行电子签署</string>
+    <string name="signature_prompt">请先进行电子签署</string>
+    <string name="customer_signature_title">请在指定区内签名</string>
+    <string name="clear_screen">清屏</string>
+
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+
+    <string name="share_to">分享至：</string>
+    <string name="platform_wechat">微信</string>
+    <string name="platform_qq">QQ</string>
+    <string name="share_title">华安信保分享</string>
+
+
+    <!-- Error View -->
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_loading">请求失败…</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+</resources>

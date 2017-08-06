@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <fragment
+        android:id="@+id/adViewpager"
+        android:name="luo.library.base.widget.banner.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="0.5px"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <ImageView
+            android:id="@+id/ivAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_huaan_ad" />
+
+        <ImageView
+            android:id="@+id/ivHuiyuan"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/ivAd"
+            android:src="@mipmap/icon_huiyuan" />
+
+        <ViewFlipper
+            android:id="@+id/vFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivHuiyuan"
+            android:autoStart="true"
+            android:background="#ffffff"
+            android:flipInterval="4000"
+            android:inAnimation="@anim/anim_marquee_in"
+            android:outAnimation="@anim/anim_marquee_out" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/icon_top_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_xiaofeidai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#545564"
+            android:text="消费贷"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/icon_xiaofeidai"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#E7E9F9"
+            />
+
+        <TextView
+            android:id="@+id/tv_weidai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#545564"
+            android:text="微贷"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/icon_weidai"
+            />
+    </LinearLayout>
+
+</LinearLayout>

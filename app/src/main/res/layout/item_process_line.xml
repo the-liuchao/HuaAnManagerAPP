@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_marker"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="@dimen/size_2"
+            android:layout_height="30dp"
+            android:background="#9EA5F2" />
+
+        <ImageView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_jinduyuan" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/size_2"
+            android:layout_height="30dp"
+            android:background="#9EA5F2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_toRightOf="@id/ll_marker"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/icon_shijian"
+            android:text="2017-06-07 12:30:35"
+            android:drawablePadding="6dp"
+            android:textColor="#b5b7c4"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="在线"
+            android:layout_marginTop="6dp"
+            android:textColor="#31313B"
+            android:textSize="14dp" />
+    </LinearLayout>
+</RelativeLayout>

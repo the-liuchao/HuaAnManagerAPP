@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HuaAnManagerAPP.iml" filepath="$PROJECT_DIR$/HuaAnManagerAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" filepath="$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bankcard_library/bankcard_library.iml" filepath="$PROJECT_DIR$/bankcard_library/bankcard_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/idcard_library/idcard_library.iml" filepath="$PROJECT_DIR$/idcard_library/idcard_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libjpeg/libjpeg.iml" filepath="$PROJECT_DIR$/libjpeg/libjpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liveness_library/liveness_library.iml" filepath="$PROJECT_DIR$/liveness_library/liveness_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lockpattern/lockpattern.iml" filepath="$PROJECT_DIR$/lockpattern/lockpattern.iml" />
+    </modules>
+  </component>
+</project>

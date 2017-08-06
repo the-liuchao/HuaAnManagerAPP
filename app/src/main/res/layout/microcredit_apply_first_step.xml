@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#F0F3FA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp">
+
+        <CheckBox
+            android:id="@+id/cb_basic_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/family_info_selector"
+            android:checked="true"
+            android:clickable="false"
+            android:textColor="@drawable/process_text_color" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_1"
+            android:layout_weight="1"
+            android:background="#D2D4E3" />
+
+        <CheckBox
+            android:id="@+id/cb_emergency_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/business_info_selector"
+            android:clickable="false" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_1"
+            android:layout_weight="1"
+            android:background="#D2D4E3" />
+
+        <CheckBox
+            android:id="@+id/cb_recommender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/data_list_selector"
+            android:clickable="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="家庭信息"
+            android:textColor="@drawable/process_text_color" />
+
+        <!-- <View
+             android:layout_width="0dp"
+             android:layout_height="@dimen/size_1"
+             android:layout_weight="1" />-->
+
+        <CheckBox
+            android:id="@+id/cb_occupationInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="生意信息"
+            android:textColor="@drawable/process_text_color" />
+
+        <!-- <View
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />-->
+
+        <CheckBox
+            android:id="@+id/cb_financeInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="上传资料清单"
+            android:textColor="@drawable/process_text_color" />
+
+        <!-- <View
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" />-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

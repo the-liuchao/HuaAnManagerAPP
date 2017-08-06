@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:textSize="16dp"
+            android:textColor="#FF0000"
+            android:paddingLeft="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="16dp"
+            android:text="未查询到电子保单!请核对保单号和证件号是否正确,证件号请填写投保人的证件号(暂不支持被保人证件号查询)"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

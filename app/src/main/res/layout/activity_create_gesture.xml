@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titleview_layout" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.star.lockpattern.widget.LockPatternIndicator
+                android:id="@+id/lockPatterIndicator"
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_48" />
+
+            <TextView
+                android:id="@+id/messageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_20"
+                android:text="@string/create_gesture_default"
+                android:textColor="@color/grey_a5a5a5"
+                android:textSize="@dimen/font_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_20"
+                android:orientation="vertical">
+
+                <com.star.lockpattern.widget.LockPatternView
+                    android:id="@+id/lockPatternView"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp" />
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:background="@null"
+                    android:text="@string/create_gesture_reset"
+                    android:textSize="@dimen/font_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

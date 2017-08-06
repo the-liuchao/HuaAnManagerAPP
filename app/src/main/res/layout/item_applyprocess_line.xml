@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_marker"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="@dimen/size_2"
+            android:layout_height="10dp"
+            android:background="#9EA5F2" />
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:text="12"
+            android:gravity="center"
+            android:background="@drawable/shape_blue_oval" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/size_2"
+            android:layout_height="10dp"
+            android:background="#9EA5F2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ll_marker"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:text="在线"
+            android:layout_marginRight="12dp"
+            android:textColor="#545564"
+            android:textSize="14dp" />
+    </LinearLayout>
+</RelativeLayout>
